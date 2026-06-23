@@ -23,8 +23,11 @@ def run(year: int, dept_ids=None, max_gos: int | None = None,
     db.init_db()
 
     if do_summarize and not summarize.health_check():
-        print(f"!! Ollama not reachable or model '{config.OLLAMA_MODEL}' missing.")
-        print("   Start it / pull the model, or run with --no-summarize.")
+        if config.LLM_PROVIDER == "groq":
+            print("!! Groq API key missing (set GROQ_API_KEY or create groq.txt).")
+        else:
+            print(f"!! Ollama not reachable or model '{config.OLLAMA_MODEL}' missing.")
+            print("   Start it / pull the model, or run with --no-summarize.")
         do_summarize = False
 
     # --- Stage 1: scrape listings and record new GOs (the ledger) ----------

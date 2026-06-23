@@ -74,7 +74,36 @@ SKIP_DEPARTMENTS: set[int] = {22}
 # the summarizer + policy_area tag handle filtering; add "rt" to drop routine.
 SKIP_GO_TYPES: set[str] = set()
 
-# --- LLM (local Ollama) ----------------------------------------------------
+# --- LLM provider ----------------------------------------------------------
+# "groq"  -> hosted Groq API (fast, no local GPU needed)
+# "ollama" -> local Ollama server (offline, private)
+LLM_PROVIDER = os.environ.get("LLM_PROVIDER", "groq").lower()
+
+# --- LLM: Groq (hosted, OpenAI-compatible) ---------------------------------
+GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
+GROQ_MODEL = "qwen/qwen3-32b"   # strong Tamil; reasoning disabled for clean JSON
+GROQ_TIMEOUT = 60
+GROQ_MAX_RETRIES = 8     # back off on 429 rate limits
+# 8b free tier is 6k tokens/MIN. With ~1.1k tokens/request (after MAX_TEXT_CHARS)
+# ~13s/request (~4-5/min) keeps us safely under that per-minute cap.
+GROQ_MIN_INTERVAL = 13.0
+
+
+def groq_api_key() -> str:
+    """Resolve the Groq key: env GROQ_API_KEY first, then a local groq.txt file.
+
+    groq.txt is gitignored; prefer the env var in real deployments.
+    """
+    key = os.environ.get("GROQ_API_KEY", "").strip()
+    if key:
+        return key
+    key_file = PROJECT_ROOT / "groq.txt"
+    if key_file.exists():
+        return key_file.read_text().strip()
+    return ""
+
+
+# --- LLM: local Ollama -----------------------------------------------------
 # Host is overridable via OLLAMA_HOST (e.g. "127.0.0.1:11500") so you can point
 # at a user-level GPU server without touching code.
 OLLAMA_HOST = os.environ.get("OLLAMA_HOST", "localhost:11434")
@@ -82,9 +111,10 @@ OLLAMA_URL = f"http://{OLLAMA_HOST}/api/chat"
 OLLAMA_MODEL = "qwen2.5:7b"   # chosen for Tamil+English quality on 4GB VRAM
 OLLAMA_TIMEOUT = 300          # generous: 7b spills to CPU on a 3050 laptop
 OLLAMA_NUM_CTX = 8192
-# Cap how much PDF text we feed the model (chars). GOs are short; the body of
-# the order is at the top. Keeps inference fast and within context.
-MAX_TEXT_CHARS = 12000
+# Cap how much PDF text we feed the model (chars). A GO's operative content is
+# at the top, so this stays small to keep us within Groq's per-minute token
+# budget (and inference fast). Raise it if summaries miss later-page details.
+MAX_TEXT_CHARS = 3000
 
 # --- OCR (scanned GOs) -----------------------------------------------------
 # Most TN GOs are scanned image PDFs, so OCR is the primary text source.
