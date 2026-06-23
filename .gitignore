@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+data/pdfs/
+data/tracker.db
+site/data.json
+site/index.html
+
+# Local Claude Code config
+.claude/
