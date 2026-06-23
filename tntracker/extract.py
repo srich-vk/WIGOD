@@ -31,11 +31,14 @@ _MONTHS = {m: i for i, m in enumerate(
      "august", "september", "october", "november", "december"], start=1)}
 
 
-def extract_text(pdf_path: str) -> dict:
+def extract_text(pdf_path: str, prefer_year: int | None = None) -> dict:
     """Get text from a GO PDF: try embedded text first, then OCR.
 
     Returns {text, raw_text_len, go_date, source_snippet, is_text, method}.
     `method` is 'embedded', 'ocr', or 'none'.
+
+    `prefer_year` (the GO's own year, from its filename) disambiguates when the
+    body cites older orders: we prefer a date in that year over a cited one.
     """
     # 1) Embedded text (fast path — works for the minority of digital GOs).
     text = ""
@@ -65,25 +68,41 @@ def extract_text(pdf_path: str) -> dict:
     return {
         "text": text,
         "raw_text_len": len(text),
-        "go_date": _find_date(text) if is_text else None,
+        "go_date": _find_date(text, prefer_year) if is_text else None,
         "source_snippet": text[:600],
         "is_text": is_text,
         "method": method if is_text else "none",
     }
 
 
-def _find_date(text: str) -> str | None:
+def _find_date(text: str, prefer_year: int | None = None) -> str | None:
+    """Collect every date in the GO and pick its actual issue date.
+
+    GO bodies routinely cite older orders ("...vide G.O. dated 21.01.1992..."),
+    so the first match is unreliable. We gather all candidates and prefer one in
+    the GO's own year; otherwise fall back to the latest plausible (not-future)
+    date, which is almost always the issue date.
+    """
+    candidates: list[_dt.date] = []
+    today = _dt.date.today()
     for rx, kind in _DATE_PATTERNS:
-        m = rx.search(text)
-        if not m:
-            continue
-        try:
-            if kind == "dmy":
-                d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
-            else:
-                d, mo, y = (int(m.group(1)),
-                            _MONTHS[m.group(2).lower()], int(m.group(3)))
-            return _dt.date(y, mo, d).isoformat()
-        except (ValueError, KeyError):
-            continue
+        for m in rx.finditer(text):
+            try:
+                if kind == "dmy":
+                    d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
+                else:
+                    d, mo, y = (int(m.group(1)),
+                                _MONTHS[m.group(2).lower()], int(m.group(3)))
+                dt = _dt.date(y, mo, d)
+            except (ValueError, KeyError):
+                continue
+            if dt <= today:  # ignore obvious garbage / future dates
+                candidates.append(dt)
+    if not candidates:
+        return None
+    if prefer_year:
+        in_year = [c for c in candidates if c.year == prefer_year]
+        if in_year:
+            return max(in_year).isoformat()
+    return max(candidates).isoformat()
     return None

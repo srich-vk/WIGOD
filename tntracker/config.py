@@ -6,6 +6,7 @@ filesystem paths, and politeness settings for scraping.
 from __future__ import annotations
 
 import base64
+import os
 from pathlib import Path
 
 # --- Source site -----------------------------------------------------------
@@ -74,7 +75,10 @@ SKIP_DEPARTMENTS: set[int] = {22}
 SKIP_GO_TYPES: set[str] = set()
 
 # --- LLM (local Ollama) ----------------------------------------------------
-OLLAMA_URL = "http://localhost:11434/api/chat"
+# Host is overridable via OLLAMA_HOST (e.g. "127.0.0.1:11500") so you can point
+# at a user-level GPU server without touching code.
+OLLAMA_HOST = os.environ.get("OLLAMA_HOST", "localhost:11434")
+OLLAMA_URL = f"http://{OLLAMA_HOST}/api/chat"
 OLLAMA_MODEL = "qwen2.5:7b"   # chosen for Tamil+English quality on 4GB VRAM
 OLLAMA_TIMEOUT = 300          # generous: 7b spills to CPU on a 3050 laptop
 OLLAMA_NUM_CTX = 8192

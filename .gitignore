@@ -8,3 +8,8 @@ site/index.html
 
 # Local Claude Code config
 .claude/
+
+# Secrets — never commit
+groq.txt
+*.key
+.env

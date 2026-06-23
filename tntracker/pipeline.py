@@ -63,7 +63,7 @@ def _process_one(row: dict, do_summarize: bool) -> None:
 
     # Extract.
     if row["status"] in (db.STATUS_NEW, db.STATUS_FETCHED, db.STATUS_ERROR):
-        ext = extract.extract_text(row["pdf_path"])
+        ext = extract.extract_text(row["pdf_path"], row.get("year"))
         if not ext["is_text"]:
             db.update(key, status=db.STATUS_NO_TEXT,
                       raw_text_len=ext["raw_text_len"],
@@ -81,7 +81,7 @@ def _process_one(row: dict, do_summarize: bool) -> None:
     # Summarize.
     text = row.get("_text")
     if text is None:  # resuming an already-extracted row: re-read the PDF text
-        text = extract.extract_text(row["pdf_path"])["text"]
+        text = extract.extract_text(row["pdf_path"], row.get("year"))["text"]
     result = summarize.summarize(text, row["dept_name"], row["go_number"],
                                  row["year"])
     db.update(
