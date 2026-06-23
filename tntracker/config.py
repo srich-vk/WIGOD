@@ -129,7 +129,9 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 PDF_DIR = DATA_DIR / "pdfs"          # cached source PDFs (source of truth)
 DB_PATH = DATA_DIR / "tracker.db"
-SITE_DIR = PROJECT_ROOT / "site"     # generated static timeline
+# Generated static timeline. Overridable via WIGOD_SITE_DIR so CI can render
+# straight into docs/ (GitHub Pages source) without disturbing local dev.
+SITE_DIR = Path(os.environ.get("WIGOD_SITE_DIR", str(PROJECT_ROOT / "site")))
 
 DEFAULT_YEAR = 2026
 

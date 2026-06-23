@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>WIGOD — What Is my GOvernment Doing?</title>
+<style>
+  :root { --bg:#0f1115; --card:#1a1d24; --line:#2a2f3a; --fg:#e6e8eb;
+          --muted:#9aa3b0; --accent:#4f8cff; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:15px/1.5 system-ui,Segoe UI,Roboto,sans-serif;
+         background:var(--bg); color:var(--fg); }
+  header { padding:24px 20px; border-bottom:1px solid var(--line); }
+  h1 { margin:0 0 4px; font-size:22px; }
+  .sub { color:var(--muted); font-size:13px; }
+  .wrap { max-width:880px; margin:0 auto; padding:20px; }
+  .controls { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px; }
+  select, input { background:var(--card); color:var(--fg);
+    border:1px solid var(--line); border-radius:8px; padding:8px 10px; font:inherit; }
+  input { flex:1; min-width:180px; }
+  .day { margin:22px 0 8px; font-size:13px; color:var(--muted);
+         text-transform:uppercase; letter-spacing:.06em; }
+  .card { background:var(--card); border:1px solid var(--line);
+          border-radius:10px; padding:14px 16px; margin:10px 0; }
+  .card .summary { font-size:15.5px; }
+  .meta { margin-top:8px; display:flex; gap:8px; flex-wrap:wrap;
+          align-items:center; font-size:12px; color:var(--muted); }
+  .tag { background:#222733; border:1px solid var(--line); border-radius:20px;
+         padding:2px 9px; }
+  .tag.area { color:var(--accent); border-color:#2d4a7a; }
+  a.pdf { color:var(--accent); text-decoration:none; }
+  a.pdf:hover { text-decoration:underline; }
+  .lowconf { border-left:3px solid #b8862b; }
+  details summary { cursor:pointer; color:var(--muted); font-size:12px; margin-top:8px; }
+  details p { color:var(--muted); font-size:12.5px; white-space:pre-wrap; }
+  .empty { color:var(--muted); padding:40px 0; text-align:center; }
+</style>
+</head>
+<body>
+<header><div class="wrap" style="padding:0">
+  <h1>WIGOD <span style="font-weight:400;color:var(--muted);font-size:15px">— What Is my GOvernment Doing?</span></h1>
+  <div class="sub" id="sub">Loading…</div>
+  <div class="sub">Tamil Nadu · a day-by-day timeline of Government Orders</div>
+</div></header>
+
+<div class="wrap">
+  <div class="controls">
+    <input id="q" placeholder="Search summaries, departments, districts…" />
+    <select id="dept"><option value="">All departments</option></select>
+    <select id="area"><option value="">All policy areas</option></select>
+  </div>
+  <div id="list"></div>
+</div>
+
+<script>
+let DATA = { entries: [] };
+
+function fmtDay(d) {
+  if (!d) return "Date unknown";
+  const dt = new Date(d + "T00:00:00");
+  return dt.toLocaleDateString("en-IN",
+    { weekday:"short", year:"numeric", month:"long", day:"numeric" });
+}
+
+function fill(sel, items) {
+  const el = document.getElementById(sel);
+  items.forEach(v => {
+    const o = document.createElement("option"); o.value = v; o.textContent = v;
+    el.appendChild(o);
+  });
+}
+
+function render() {
+  const q = document.getElementById("q").value.toLowerCase();
+  const dept = document.getElementById("dept").value;
+  const area = document.getElementById("area").value;
+
+  const rows = DATA.entries.filter(e => {
+    if (dept && e.department !== dept) return false;
+    if (area && e.policy_area !== area) return false;
+    if (q) {
+      const hay = (e.summary + " " + e.department + " " +
+                   (e.districts||[]).join(" ")).toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+
+  const list = document.getElementById("list");
+  list.innerHTML = "";
+  if (!rows.length) { list.innerHTML = '<div class="empty">No matching actions.</div>'; return; }
+
+  let lastDay = null;
+  for (const e of rows) {
+    if (e.date !== lastDay) {
+      lastDay = e.date;
+      const h = document.createElement("div");
+      h.className = "day"; h.textContent = fmtDay(e.date);
+      list.appendChild(h);
+    }
+    const card = document.createElement("div");
+    card.className = "card" + (e.confidence < 0.4 ? " lowconf" : "");
+    const districts = (e.districts||[]).map(d =>
+      `<span class="tag">${d}</span>`).join("");
+    card.innerHTML = `
+      <div class="summary">${escapeHtml(e.summary)}</div>
+      <div class="meta">
+        <span class="tag">${escapeHtml(e.department)}</span>
+        ${e.policy_area ? `<span class="tag area">${e.policy_area}</span>` : ""}
+        ${e.go_number ? `<span>GO ${e.go_type?.toUpperCase()||""} No.${e.go_number}</span>` : ""}
+        ${e.lang === "ta" ? `<span class="tag">Tamil source</span>` : ""}
+        ${districts}
+        <a class="pdf" href="${e.pdf_url}" target="_blank" rel="noopener">source PDF ↗</a>
+      </div>
+      ${e.snippet ? `<details><summary>source excerpt (grounding)</summary><p>${escapeHtml(e.snippet)}</p></details>` : ""}
+    `;
+    list.appendChild(card);
+  }
+}
+
+function escapeHtml(s) {
+  return (s||"").replace(/[&<>"]/g, c =>
+    ({ "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;" }[c]));
+}
+
+fetch("data.json").then(r => r.json()).then(d => {
+  DATA = d;
+  document.getElementById("sub").textContent =
+    `${d.count} actions · generated ${d.generated_at}`;
+  fill("dept", d.departments || []);
+  fill("area", d.policy_areas || []);
+  ["q","dept","area"].forEach(id =>
+    document.getElementById(id).addEventListener("input", render));
+  render();
+}).catch(e => {
+  document.getElementById("sub").textContent = "Could not load data.json";
+});
+</script>
+</body>
+</html>

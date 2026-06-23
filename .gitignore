@@ -2,7 +2,8 @@
 __pycache__/
 *.pyc
 data/pdfs/
-data/tracker.db
+# data/tracker.db is committed: it's the dedup ledger that must persist between
+# ephemeral CI runs (otherwise every run re-summarizes everything).
 site/data.json
 site/index.html
 

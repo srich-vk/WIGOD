@@ -87,7 +87,32 @@ python -m tntracker.render
 
 Department IDs are listed in `tntracker/config.py` (`DEPARTMENTS`).
 
-### Daily automation (optional)
+### LLM provider
+Summarization runs through either hosted **Groq** (default) or local **Ollama**,
+selected by `LLM_PROVIDER` (`groq` | `ollama`) in `tntracker/config.py` / env.
+- Groq: set `GROQ_API_KEY` (env var, or a gitignored `groq.txt` for local use);
+  model is `GROQ_MODEL` (default `qwen/qwen3-32b`).
+- Ollama: set `OLLAMA_HOST`; model is `OLLAMA_MODEL` (needs a local GPU server).
+
+### Daily automation (GitHub Actions → GitHub Pages)
+The repo runs itself in the cloud — no local machine needed. `.github/workflows/daily.yml`
+fires daily at **02:00 UTC**, scrapes new GOs, summarizes them via Groq, renders the
+timeline into `docs/`, and commits `docs/` + `data/tracker.db` back to `main`.
+GitHub Pages serves the result from `main` `/docs`.
+
+The pipeline is idempotent: the committed `data/tracker.db` ledger lets each run
+skip GOs already summarized, so a daily run only processes the handful of new
+orders (well within Groq's free tier). The ledger **must** stay committed —
+that's why it is no longer gitignored.
+
+**One-time setup (GitHub UI):**
+1. Add repo secret `GROQ_API_KEY` (Settings → Secrets and variables → Actions).
+2. Enable Pages: Settings → Pages → Source = *Deploy from a branch* → `main` `/docs`.
+
+Trigger a manual run anytime from the Actions tab (*Run workflow*). Live site:
+`https://srich-vk.github.io/WIGOD/`
+
+To run the daily job on your own machine instead, use cron:
 ```bash
 # crontab -e  — run at 06:30 daily, then regenerate the site
 30 6 * * * cd /home/srich-vk/Documents/WIMAD && .venv/bin/python -m tntracker.pipeline --year 2026 && .venv/bin/python -m tntracker.render
@@ -104,13 +129,15 @@ tntracker/
   fetch.py         download + cache + hash PDFs
   extract.py       embedded-text extraction, OCR fallback, date parsing
   ocr.py           pdftoppm + tesseract OCR (Tamil+English) for scanned GOs
-  summarize.py     local Ollama structured summarization
+  summarize.py     structured summarization via Groq or local Ollama
   db.py            SQLite schema + dedup ledger
   pipeline.py      orchestrates the daily run (idempotent, resumable)
   render.py        emits the static site
   templates/index.html   filterable timeline UI
-data/              tracker.db + cached pdfs/ (created on first run)
-site/              generated static site (created by render)
+data/              tracker.db (committed ledger) + cached pdfs/ (gitignored)
+site/              generated static site for local dev (gitignored)
+docs/              generated static site published to GitHub Pages (committed by CI)
+.github/workflows/daily.yml   scheduled cloud run (scrape → summarize → publish)
 ```
 
 ## Known limits / next steps
