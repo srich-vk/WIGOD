@@ -4,10 +4,15 @@ name: Daily WIGOD update
 # timeline into docs/, and commits the result + the dedup ledger back to main.
 # GitHub Pages serves from main /docs.
 
+# NOTE: the daily schedule is intentionally disabled. GitHub-hosted runners
+# (US/EU Azure IPs) cannot connect to tn.gov.in — it silently drops non-Indian /
+# datacenter traffic, so the scrape times out (verified: HTTP 000, no TCP connect).
+# Re-enable the `schedule` block below only once this runs on a machine with
+# Indian network access (a self-hosted runner or an India-region VPS).
 on:
-  schedule:
-    - cron: "0 2 * * *"   # 02:00 UTC (~07:30 IST) daily
-  workflow_dispatch:        # allow manual runs from the Actions tab
+  # schedule:
+  #   - cron: "0 2 * * *"   # 02:00 UTC (~07:30 IST) daily
+  workflow_dispatch:        # manual runs only, until an India-based host exists
 
 # Never let two runs overlap (they'd race on the committed ledger).
 concurrency:

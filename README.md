@@ -96,21 +96,27 @@ selected by `LLM_PROVIDER` (`groq` | `ollama`) in `tntracker/config.py` / env.
 
 ### Daily automation (GitHub Actions → GitHub Pages)
 The repo runs itself in the cloud — no local machine needed. `.github/workflows/daily.yml`
-fires daily at **02:00 UTC**, scrapes new GOs, summarizes them via Groq, renders the
-timeline into `docs/`, and commits `docs/` + `data/tracker.db` back to `main`.
-GitHub Pages serves the result from `main` `/docs`.
+scrapes new GOs, summarizes them via Groq, renders the timeline into `docs/`, and
+commits `docs/` + `data/tracker.db` back to `main`. GitHub Pages serves the result
+from `main` `/docs` at `https://srich-vk.github.io/WIGOD/`.
 
 The pipeline is idempotent: the committed `data/tracker.db` ledger lets each run
-skip GOs already summarized, so a daily run only processes the handful of new
-orders (well within Groq's free tier). The ledger **must** stay committed —
-that's why it is no longer gitignored.
+skip GOs already summarized, so a run only processes the handful of new orders
+(well within Groq's free tier). The ledger **must** stay committed — that's why
+it is no longer gitignored.
 
-**One-time setup (GitHub UI):**
-1. Add repo secret `GROQ_API_KEY` (Settings → Secrets and variables → Actions).
-2. Enable Pages: Settings → Pages → Source = *Deploy from a branch* → `main` `/docs`.
+> ⚠️ **The daily schedule is currently disabled (manual `workflow_dispatch` only).**
+> GitHub-hosted runners (US/EU Azure IPs) **cannot reach `tn.gov.in`** — it silently
+> drops non-Indian / datacenter traffic, so the scrape times out (verified: HTTP 000,
+> no TCP connect). The pipeline and Pages publishing work; only the *scrape host* is
+> the open problem. To automate, run this from a machine with Indian network access —
+> a **self-hosted GitHub runner** (`runs-on: self-hosted`) or an **India-region VPS**
+> on cron — then re-enable the `schedule:` block in `.github/workflows/daily.yml`.
+> Until then, the site is refreshed by running the pipeline locally and pushing.
 
-Trigger a manual run anytime from the Actions tab (*Run workflow*). Live site:
-`https://srich-vk.github.io/WIGOD/`
+**One-time setup (GitHub UI), already done for this repo:**
+1. Repo secret `GROQ_API_KEY` (Settings → Secrets and variables → Actions).
+2. Pages: Settings → Pages → Source = *Deploy from a branch* → `main` `/docs`.
 
 To run the daily job on your own machine instead, use cron:
 ```bash
