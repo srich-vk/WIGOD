@@ -1,4 +1,4 @@
-# Tamil Nadu Government Action Tracker (Pilot)
+# WIGOD — What Is my GOvernment Doing?
 
 A day-by-day timeline of what the Tamil Nadu state government actually did —
 built entirely from public **Government Orders (GOs)** on `tn.gov.in`. No
