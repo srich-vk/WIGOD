@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-23T23:21:27",
-  "count": 98,
+  "generated_at": "2026-06-26T01:49:08",
+  "count": 101,
   "departments": [
     "BC, MBC & Minorities Welfare Department",
     "Finance Department",
@@ -27,6 +27,48 @@
     "welfare"
   ],
   "entries": [
+    {
+      "go_key": "fin_e_123_2026",
+      "date": "2026-06-24",
+      "department": "Finance Department",
+      "go_number": null,
+      "go_type": null,
+      "lang": "en",
+      "summary": "Approves New Health Insurance Scheme, 2026 for pensioners and family pensioners with coverage up to Rupees Five lakh.",
+      "policy_area": "health",
+      "districts": [],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/fin_e_123_2026.pdf",
+      "snippet": "FINANCE [Health Insurance] DEPARTMENT\nGUIDELINES FOR IMPLEMENTATION\nOF\nNEW HEALTH INSURANCE SCHEME, 2026\nFOR PENSIONERS (INCLUDING SPOUSE) /\nFAMILY PENSIONERS\n[G.O.Ms.No.123, Finance (HI) Department, Dated: 24-06-2026]\n©\nGovernment of Tamil Nadu\n2026\n\nGovernment of Tamil Nadu\n2026 MANUSCRIPT SERIES\nFINANCE [Health Insurance] DEPARTMENT\nG.O.Ms.No.123, Dated 24th June, 2026.\n(Parabhava, Aani-10, Thiruvalluvar Aandu 2057)\nABSTRACT\nMEDICAL AID – New Health Insurance Scheme, 2026 for Pensioners\n(including spouse) / Family Pensioners – Provision of Health Care\nAssistance to the Pensioners (includin"
+    },
+    {
+      "go_key": "fin_e_122_2026",
+      "date": "2026-06-24",
+      "department": "Finance Department",
+      "go_number": null,
+      "go_type": null,
+      "lang": "en",
+      "summary": "Approves implementation of New Health Insurance Scheme 2026 for government employees and eligible family members through United India Insurance Company Limited.",
+      "policy_area": "health",
+      "districts": [],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/fin_e_122_2026.pdf",
+      "snippet": "©\nGovernment of Tamil Nadu MANUSCRIPT SERIES\n2026\nFINANCE [Health Insurance] DEPARTMENT\nG.O.Ms.No.122, Dated : 24th June 2026.\n(Parabhava, Aani-10, Thiruvalluvar Aandu-2057)\nABSTRACT\nMEDICAL AID – New Health Insurance Scheme, 2026 – Provision\nof Health Care Assistance to the Employees of Government\nDepartments and their eligible family members through the United\nIndia Insurance Company Limited, Chennai - Implementation -\nOrders – Issued.\nREAD:\n1. G.O.Ms.No.160, Finance (Salaries) Department,\nDated: 29-06-2021.\n2. G.O.Ms.No.145, Finance (Health Insurance)\nDepartment, Dated: 24-06-2025.\n3. G.O.M"
+    },
+    {
+      "go_key": "hfw_e_166_ms_2026",
+      "date": "2026-06-23",
+      "department": "Health and Family Welfare Department",
+      "go_number": "166",
+      "go_type": "ms",
+      "lang": "en",
+      "summary": "Approves one-gram gold ring for newborns in government institutions under Thaimaaman Thanga Mothiram Thittam.",
+      "policy_area": "health",
+      "districts": [],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_166_ms_2026.pdf",
+      "snippet": "ABSTRACT\n\nPublic Health - Thaimaaman Thanga Mothiram Thittam தாய்மாமன்‌ தங்க மோதிரம்‌\n\nதிட்டம்‌) for newborns delivered in the Government institutions — Administrative and\nfinancial sanction — Accorded - Orders — Issued.\n\nHEALTH AND FAMILY WELFARE (P2) DEPARTMENT\n\n6.0. (Ms.) No.166 Dated: 23.06.2026\nஸ்ரீ பராபவ, ஆனி - 09\nதிருவள்ளுவர்‌ ஆண்டு - 2057\n\nRead:\n\nFrom the Director of Public Health and Preventive Medicine\nLetter R.No.01-19002/61/MCH-1/2026, Dated 19.06.2026.\n\nRRKKK\n\nORDER:\n\nTamil Nadu has consistently demonstrated a strong commitment to maternal\nand child healthcare and has achieved rem"
+    },
     {
       "go_key": "fin_e_111_2026",
       "date": "2026-06-16",
