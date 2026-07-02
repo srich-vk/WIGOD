@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-01T08:43:54",
-  "count": 101,
+  "generated_at": "2026-07-02T07:37:39",
+  "count": 102,
   "departments": [
     "BC, MBC & Minorities Welfare Department",
     "Finance Department",
@@ -27,6 +27,20 @@
     "welfare"
   ],
   "entries": [
+    {
+      "go_key": "rd_e_ms_113_2026",
+      "date": "2026-06-24",
+      "department": "Rural Development and Panchayat Raj Department",
+      "go_number": null,
+      "go_type": "ms",
+      "lang": "en",
+      "summary": "Sanctions Rs.8.35 crore for PMGSY-III Batch-I (2023-24) for road and bridge upgradation in FY 2026-27.",
+      "policy_area": "rural_development",
+      "districts": [],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/rd_e_ms_113_2026.pdf",
+      "snippet": "ABSTRACT\n\nSchemes - Centrally Sponsored Schemes - PMGSY-III Batch-I (2023-24) Upgradation of\n660 roads for a length of 2869.29 km and upgradation of 28 Bridges for a length of 891.10m\nfor a total cost of Rs.1945.02 Crore Sanctioned — FY 2026-27 — 274 Mother Sanction for of\nRs.5,00,00,000/- as Central Share and State Share of Rs.3,35,00,000 under programme\nFund - Sanctioned — Orders — Issued.\n\nRural Development and Panchayat Raj [CGS-2(1)] Department\n\n.0.(145) No.113 Dated: 24.06.2026\nஸ்ரீபராபவ, ஆனி 10,\nதிருவள்ளுவர்‌ ஆண்டு 2057\n\nRead:\n\nRef: 1. Ministry of Rural Development letter No.P-17024/24/"
+    },
     {
       "go_key": "fin_e_123_2026",
       "date": "2026-06-24",
