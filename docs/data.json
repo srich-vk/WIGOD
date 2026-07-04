@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-03T07:35:54",
-  "count": 102,
+  "generated_at": "2026-07-04T07:33:45",
+  "count": 103,
   "departments": [
     "BC, MBC & Minorities Welfare Department",
     "Finance Department",
@@ -27,6 +27,20 @@
     "welfare"
   ],
   "entries": [
+    {
+      "go_key": "fin_e_14190711_2026_lr",
+      "date": "2026-07-02",
+      "department": "Finance Department",
+      "go_number": null,
+      "go_type": null,
+      "lang": "en",
+      "summary": "Clarifies interim payout procedure for eligible retirees under the Tamil Nadu Assured Pension Scheme from January 1, 2026.",
+      "policy_area": "finance",
+      "districts": [],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/fin_e_14190711_2026_lr.pdf",
+      "snippet": "Finance (TAPS) Department,\nSecretariat,\nChennai-600 009.\n\nLetter No. 14190711/Finance (TAPS)/ 2026-3, dated:02.07.2026\n\nFrom\nThiru. M.A. Siddique, |.A.S.,\nAdditional Chief Secretary to Government.\n\nTo\nAll Administrative Departments in Secretariat, Chennai — 9 (w.e).\nAll Heads of Department (w.e).\n\nSir / Madam,\n\nSub: Pension — Sustenance support to eligible Government\nservants retiring under the CPS on or after 01.01.2026\ntill the notification of regular TAPS rules - Interim Payout-\nClarification sought for - Issued.\n\nRef: 1. G.O.(Ms) No.7, Finance (PGC) Department, dated\n09.01.2026.\n2. G.O.(Ms"
+    },
     {
       "go_key": "rd_e_ms_113_2026",
       "date": "2026-06-24",
