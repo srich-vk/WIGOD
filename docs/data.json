@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-06T07:33:21",
-  "count": 103,
+  "generated_at": "2026-07-07T08:14:25",
+  "count": 116,
   "departments": [
     "BC, MBC & Minorities Welfare Department",
     "Finance Department",
@@ -28,6 +28,20 @@
   ],
   "entries": [
     {
+      "go_key": "hud_e_137_2026",
+      "date": "2026-07-03",
+      "department": "Housing and Urban Development Department",
+      "go_number": null,
+      "go_type": null,
+      "lang": "en",
+      "summary": "Extends by one year the online application period for regularization of educational buildings in non-plan areas constructed before 2011.",
+      "policy_area": "urban_development",
+      "districts": [],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hud_e_137_2026.pdf",
+      "snippet": "Urban Development - Extension of time for submitting applications through\nonline for regularization of buildings of Educational Institutions functioning\nprior to 01.01.2011 in non-plan areas - Orders issued.\n\nகல்வ லைவில்‌ லவ்வை ல வலைக்‌ ஆ Me லைல்‌ லல அவ்ஸ்‌ See CaS அவ்வகை அல்ல Ses SeSSe ek tesa cece ses ௮௯--கைகண்க லை அவனக்‌ see\"\n\nVELOP D\nG.O.(Ms).No.137 Dated: 03.07.2026\n\nபராபவ வருடம்‌, ஆனி 19,\nதிருவள்ளுவர்‌ ஆண்டு 2057\n\nRead\n\n1. G.O.Ms.No.76, Housing and Urban Development\nDepartment, dated 14.06.2018.\n\n2. Government Letter (Ms) No.128/UD4(1)/2022,\ndated 24.06.2022.\n\n3. Government Letter (Ms) N"
+    },
+    {
       "go_key": "fin_e_14190711_2026_lr",
       "date": "2026-07-02",
       "department": "Finance Department",
@@ -40,6 +54,62 @@
       "confidence": 0.95,
       "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/fin_e_14190711_2026_lr.pdf",
       "snippet": "Finance (TAPS) Department,\nSecretariat,\nChennai-600 009.\n\nLetter No. 14190711/Finance (TAPS)/ 2026-3, dated:02.07.2026\n\nFrom\nThiru. M.A. Siddique, |.A.S.,\nAdditional Chief Secretary to Government.\n\nTo\nAll Administrative Departments in Secretariat, Chennai — 9 (w.e).\nAll Heads of Department (w.e).\n\nSir / Madam,\n\nSub: Pension — Sustenance support to eligible Government\nservants retiring under the CPS on or after 01.01.2026\ntill the notification of regular TAPS rules - Interim Payout-\nClarification sought for - Issued.\n\nRef: 1. G.O.(Ms) No.7, Finance (PGC) Department, dated\n09.01.2026.\n2. G.O.(Ms"
+    },
+    {
+      "go_key": "hud_e_129_2026",
+      "date": "2026-06-30",
+      "department": "Housing and Urban Development Department",
+      "go_number": null,
+      "go_type": null,
+      "lang": "en",
+      "summary": "Amends building rules to reserve 0.5% area in government-developed industrial layouts for public use without transferring it to local bodies.",
+      "policy_area": "urban_development",
+      "districts": [],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hud_e_129_2026.pdf",
+      "snippet": "eS\n\nAlone\n\nABSTRACT\n\nUrban Development - Amendment to Tamil Nadu Combined Development\nand Building Rules, 2019 - Industrial layout/Industrial estate developed\nby Government Department/Agencies - Reservation and transfer of 0.5%\nof the area for public purpose to local body - Notification - Orders -\nIssued.\n\nHOUSING AND URBAN DEVELOPMENT [UD4(1)] DEPARTMENT\n\nG.O.(Ms).No. 129 Dated: 29.06.2026\nபராபவ வருடம்‌, ஆனி-15\nதிருவள்ளுவர்‌ ஆண்டூ 2057\n\nORDER:\n\nThe appended Notification will be published in the Tamil Nadu\nGovernment Gazette, Extraordinary dated the 30 June, 2026.\n\n(BY ORDER OF THE GOVERNOR)\n\n"
+    },
+    {
+      "go_key": "hfw_e_170_ms_2026",
+      "date": "2026-06-29",
+      "department": "Health and Family Welfare Department",
+      "go_number": "170",
+      "go_type": "ms",
+      "lang": "en",
+      "summary": "Creates a Standard Operating Procedure to identify and take action against unauthorized health sector institutions and unapproved courses.",
+      "policy_area": "health",
+      "districts": [],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_170_ms_2026.pdf",
+      "snippet": "ABSTRACT\n\nMedical Institutions — Identification and initiating action against Unauthorised\nInstitutions / Institutions conducting unapproved courses in Health Sector, including\nMedicine, Dentistry, Nursing, Pharmacy, Allied and Healthcare, Rehabilitation\nSciences, Indian Systems of Medicine (Ayurveda, Siddha, Unani), Homeopathy,\nYoga and Naturopathy and Public Health — Standard Operating Procedure — Orders -\nIssued.\n\nHEALTH AND FAMILY WELFARE (PME-2) DEPARTMENT\n\nG.O. (Ms.) No.170 | Dated : 29.06.2026\nVisuvavasu, Aani-16\nThiruvalluvar Aandu-2057\n\nRead :\n\n1. From the Registrar, Tamil Nadu Nurses"
+    },
+    {
+      "go_key": "hfw_e_169_ms_2026",
+      "date": "2026-06-25",
+      "department": "Health and Family Welfare Department",
+      "go_number": "169",
+      "go_type": "ms",
+      "lang": "en",
+      "summary": "Sanctions Rs.187.50 crore for the Pradhan Mantri Ayushman Bharat Health Infrastructure Mission for 2026-2027.",
+      "policy_area": "health",
+      "districts": [],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_169_ms_2026.pdf",
+      "snippet": "Yencdis oe\n\nABSTRACT\n\nNational Health Mission — Tamil Nadu — Sanction and release of first Mother Sanction\nand proportionate State Share for Grants-in-Aid for Pradhan Mantri Ayushman Bharat\nHealth Infrastructure Mission for the Financial Year 2026-2027 on SNA SPARSH\nplatform — Orders — Issued.\n\nHEALTH AND FAMILY WELFARE (EAP.II/1) DEPARTMENT.\n\nG.0.(Ms.).No.169 Dated 25.06.2026\nபராபவ, ஆனி - 11\n\nதிருவள்ளுவர்‌ ஆண்டு 2057\n\nRead:\n\n1. From the Government of India, Ministry of Health and Family Welfare,\nletter No.G.2701 8/21/2026-2027/NHM-F(FTS-8399490), dated\n28.04.2026.\n\n2. From the Mission Directo"
+    },
+    {
+      "go_key": "hfw_e_168_ms_2026",
+      "date": "2026-06-25",
+      "department": "Health and Family Welfare Department",
+      "go_number": "168",
+      "go_type": "ms",
+      "lang": "en",
+      "summary": "Sanctions Rs.12,98,19,509 for vaccines and materials under health programs for 2025-26 and releases Rs.8,65,46,339 state share.",
+      "policy_area": "health",
+      "districts": [],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_168_ms_2026.pdf",
+      "snippet": "ABSTRACT\n\nNational Health Mission - Tami! Nadu - Vaccines, consumables and other materials\nsupplied by Government of India as Kind / Commodity Grants to State Government\nfor Routine Immunization Programme, National Tuberculosis Elimination Programme\nand National Viral Hepatitis Control Programme for the year 2025-26 — Sanction and\nrelease of commensurate State Share on SNA-SPARSH platform — Orders - Issued.\n\nHEALTH AND FAMILY WELFARE (EAP.II/1) DEPARTMENT\n\nG.0.(Ms.).No.168 Dated 25.06.2026\n\nORDER:\nin the letter first read above, the Government of India have approved a sum of\n\nதிருவள்ளுவர்‌ ஆண்"
     },
     {
       "go_key": "rd_e_ms_113_2026",
@@ -112,6 +182,20 @@
       "snippet": "ABSTRACT\n\nPension — Tamil Nadu Assured Pension Scheme (TAPS) — Framing of rules and\nprocedures — Sustenance support to eligible Government servants retiring on or after\n01.01.2026 in the intervening period till the notification of TAPS ய — Interim Payout-\n\nOrders - Issued.\n\nFINANCE (TAPS) DEPARTMENT\n\nG.0.(Ms).No.111 Dated: 16.06.2026\nஆனி-2\n\nதிருவள்ளுவர்‌ ஆண்டு- 2057,\n\nRead :-\nG.0O.(Ms) No.7, Finance (60) Department, dated: 09.01.2026.\n\nok ek ek\n\nORDER:\n\nIn the Government order read above, Government have introduced the new\npension scheme called the ‘Tamil Nadu Assured Pension Scheme (TAPS)' fo"
     },
     {
+      "go_key": "hud_e_126_2026",
+      "date": "2026-06-15",
+      "department": "Housing and Urban Development Department",
+      "go_number": null,
+      "go_type": null,
+      "lang": "en",
+      "summary": "Amends 2019 building rules to reconstitute panel and delegate HRB approval to Chennai Metropolitan Development Authority.",
+      "policy_area": "urban_development",
+      "districts": [],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hud_e_126_2026.pdf",
+      "snippet": "ABSTRACT\n\nUrban Development - Scrutiny of HRB application in Chennai Metropolitan\nArea - Amendment to the Tamil Nadu Combined Development and Building\nRules, 2019 - Orders - Issued.\n\nHousing and Urban Development (UD-1) Department\n\nG.0.(Ms).No.126 Dated: 15.06.2026\nபராபவ வருடம்‌, ஆனி 1,\nதிருவள்ளுவர்‌ ஆண்டு 2057.\n\nRead:\n\n1. G.O.(Ms.) No.69, Housing and Urban Development\n(UD-1) Department, dated 03.07.2023.\n\n2. From the Member Secretary, Chennai Metropolitan\nDevelopment Authority, Letter No. C3(N)/14702/2021,\ndated 08.06.2026.\n\nORDER:\n\nIn the G.O. first read above, sub-rule (25) of rule 39 of th"
+    },
+    {
       "go_key": "rd_e_ms_108_2026",
       "date": "2026-06-09",
       "department": "Rural Development and Panchayat Raj Department",
@@ -144,6 +228,38 @@
       "snippet": "ABSTRACT\n\nPublic Services - Equivalence of Degrees - 35 Meeting of the Equivalence of\nDegrees - Non-equivalence of Degrees offered by various Universities / Educational\nInstitutions to the similar Degrees - Recommendation of Equivalence Committee -\nApproved - Orders - Issued.\n\nHEALTH AND FAMILY WELFARE (N1) DEPARTMENT\n\nG.0.(Ms) No.162 Dated: 03.06.2026\nதிருவள்ளுவர்‌ ஆண்டு-2057\nஸ்ரீ பராபவ, வைகாசி -20\n\nRead:\n\n1. From the Member-Secretary, Tamil Nadu State Council for Higher\nEducation, Letter Rc.N0.3072/2025 A, dated 18.09.2025.\n\n2. From the Secretary to Government, Higher Education (01)\nDepartme"
     },
     {
+      "go_key": "hfw_e_614_D_2026",
+      "date": "2026-06-01",
+      "department": "Health and Family Welfare Department",
+      "go_number": "614",
+      "go_type": "d",
+      "lang": "en",
+      "summary": "Approves inclusion of one Basic Life Support ambulance in Kalvarayan Hills to strengthen 108 emergency services.",
+      "policy_area": "health",
+      "districts": [
+        "Kallakurichi"
+      ],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_614_D_2026.pdf",
+      "snippet": "ABSTRACT\n\nAmbulance - One Basic Life Support Ambulance at Kalvarayan Hills to include in the\nexisting fleet strength of 108 services under Tamil Nadu Health Systems Project -\nAccepted — Orders — Issued.\n\nHEALTH AND FAMILY WELFARE (EAPI-2) DEPARTMENT\n\nG.O. (D) No.614 Dated: 01.06.2026\nபராபவ வருடம்‌, வைகாசி - 18\n\nதிருவள்ளுவர்‌ ஆண்டு-2057\nRead:\n\nFrom the Project Director, Tamil Nadu Health Systems Project, Roc.No.\nTNHSP/175/2026-EMS, Dated 06.03.2026.\n\nஸ்ஸ்ஸ்ஸ்ஸ்‌\n\nORDER:\n\nIn the letter read above, the Project Director, Tamil Nadu Health Systems\nProject has stated that the District Collector, Kal"
+    },
+    {
+      "go_key": "hfw_e_156_ms_2026",
+      "date": "2026-06-01",
+      "department": "Health and Family Welfare Department",
+      "go_number": "156",
+      "go_type": "ms",
+      "lang": "en",
+      "summary": "Revises administrative sanction for constructing a Centre of Excellence for Cancer Disease at Rs.122.79 crore.",
+      "policy_area": "health",
+      "districts": [
+        "Kancheepuram"
+      ],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_156_ms_2026.pdf",
+      "snippet": "ABSTRACT\n\nPlanning and Development - Construction of building to Centre of Excellence for\nCancer Disease at Government Arignar Anna Memorial Cancer Hospital, Karapettai,\nKancheepuram District - Revised administrative sanction — Accorded - Orders\nIssued.\n\nHEALTH AND FAMILY WELFARE (EAP.II/1) DEPARTMENT\n\nG.0.(Ms.).No.156 Dated 01.06.2026\nபராபவ, வைகாசி - 18\n\nதிருவள்ளுவர்‌ ஆண்டு 2௦57\n\nRead:\n\n1. G.O.(Ms).No.540, Health and Family Welfare (EAP.II/1) Department,\ndated 29.11.2019.\n\n2. From the Director of Medical Education and Research, Chennai, letter\nNo.50896/P&D1/1/2024, dated 06.06.2024, 30.12.202"
+    },
+    {
       "go_key": "public_e_366_2026",
       "date": "2026-05-30",
       "department": "Public Department",
@@ -170,6 +286,20 @@
       "confidence": 0.95,
       "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_596_D_2026.pdf",
       "snippet": "ABSTRACT\n\nPublic Health — Taking over of three Garden Hospitals பா Tamil Nadu Tea\nPlantation Corporation Limited (TANTEA) and two Garden Hospitals along with six\nDispensaries under Arasu Rubber Corporation Limited (ARC) under the administrative\ncontrol of the Director of Public Health and Preventive Medicine — Constitution of\nMerger Committee — Orders — Issued.\n\nHEALTH AND FAMILY WELFARE (N2) DEPARTMENT\n\nG.0.(D) No.596 L Dated: 27.05.2026\n% திருவள்ளுவர்‌ ஆண்டு-2057\nஸ்ரீ பராபவ, வைகாசி -13\n\nRead:\n\n1. G.O0.(Ms) No.17, Health and Family Welfare (N2) Department,\ndated 13.01.2025.\n\n2. From the Direc"
+    },
+    {
+      "go_key": "hfw_e_149_ms_2026",
+      "date": "2026-05-25",
+      "department": "Health and Family Welfare Department",
+      "go_number": "149",
+      "go_type": "ms",
+      "lang": "en",
+      "summary": "Sanctions and releases Rs.381.80 crore central funds and Rs.254.53 crore state share for health programs in 2026-2027.",
+      "policy_area": "health",
+      "districts": [],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_149_ms_2026.pdf",
+      "snippet": "(2 SBS\nரா me alto\nர ண கா]\nட்ட கப he\n\n“wean oe”\n\nABSTRACT\n\nNational Health Mission-Tamil Nadu - Sanction and release of First Mother Sanction\nand proportionate State Share for Grants-in-Aid under Flexible Pool for Reproductive\nand Child Health and Health System Strengthening, National Health Programme and\nUrban Health Mission under National Health Mission for the financial year 2026-2027\non SNA-SPARSH platform — Orders - Issued.\n\nHEALTH AND FAMILY WELFARE (EAP.II/1) DEPARTMENT\n\nG.O.(Ms).No.149 Dated 25.05.2026\nபராபவ, வைகாசி - 11\n\nதிருவள்ளுவர்‌ ஆண்டு 2057\nRead: |\n\n1. From the Government of India"
     },
     {
       "go_key": "public_e_345_2026",
@@ -245,6 +375,22 @@
       "snippet": "டு\n\nGovernment of Tamil Nadu\n2026\n\nMANUSCRIPT SERIES\n\nFINANCE (PENSION) DEPARTMENT\n\nG.0.Ms.No.98, Dated 14\" May 2026\n(Chithirai — 31, Thiruvalluvar Aandu 2057)\nABSTRACT\n\nPENSION - Dearness Allowance 1௦ the Pensioners ஹல Family Pensioners -\nEnhanced Rate admissible from 1st January 2026 — Orders - Issued.\n\nRead the following:-\n\n1. G.O.Ms.No.251, Finance (Pension) Department,\ndated:13.11.2025.\n\n2. G.0.Ms.No.97, Finance (Allowances) Department,\ndated:14.05.2026.\n-000-\nORDER:\n\nIn the Government Order first read above, orders were issued\nsanctioning the enhanced rate of Dearness Allowance to the St"
     },
     {
+      "go_key": "hfw_e_558_D_2026",
+      "date": "2026-05-11",
+      "department": "Health and Family Welfare Department",
+      "go_number": "558",
+      "go_type": "d",
+      "lang": "en",
+      "summary": "Approves acceptance of one Advanced Life Support Ambulance donated by L & T Valves Limited through CSR for inclusion in 108 fleet in Kancheepuram.",
+      "policy_area": "health",
+      "districts": [
+        "Kancheepuram"
+      ],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_558_D_2026.pdf",
+      "snippet": "ABSTRACT\n\nAmbulance — Donation of Advanced Life Support Ambulance through CSR initiative\nby L & T Valves Limited in Partnership with Hand in Hand India, Little\nKancheepuram - Added to existing 108 fleet strength — Accepted — Orders — Issued.\n\nHEALTH AND FAMILY WELFARE (EAPI-2) DEPARTMENT\n\nG.O. (D) No.558 Dated: 11.05.2026\nபராபவ வருடம்‌, சித்திரை - 28\n\nதிருவள்ளுவர்‌ ஆண்டு-2057\nRead:\n\nFrom thee’ Project Director, Tamil Nadu Health Systems ‘Project,\nFile No. TNHSP/133/2026-EMS, dated 24.02.2026. ப\n\nREKKK\n\nORDER:\n\nIn the letter.read above, the Project Director, Tamil Nadu Health Systems\nProject ha"
+    },
+    {
       "go_key": "public_e_329_2026",
       "date": "2026-05-10",
       "department": "Public Department",
@@ -299,6 +445,20 @@
       "confidence": 0.9,
       "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_131_ms_2026.pdf",
       "snippet": "ABSTRACT\n\nNational Health Mission — Tamil Nadu — Vaccines, consumables லா other materials\nsupplied by Government of India as Kind / Commodity Grants 1௦ State Government for\nRoutine Immunization Programme, Pulse Polio Immunization Programme and National\nTuberculosis Elimination Programme for 1௩6 year 2025-2026 and National Viral\nHepatitis Control Programme for the year 2019 to 2024-2025 — Sanction and release of\ncommensurate State Share on SNA-SPARSH platform — Orders — Issued.\n\nHEALTH ஊற FAMILY WELFARE (EAP.II/1) DEPARTMENT -\n\n0.(Ms).No.131 Dated 24.04.2026\nபராபவ, சித்திரை — 11\nதிருவள்ளுவர்‌ ஆ"
+    },
+    {
+      "go_key": "hfw_e_12_2D_2026",
+      "date": "2026-04-15",
+      "department": "Health and Family Welfare Department",
+      "go_number": null,
+      "go_type": null,
+      "lang": "en",
+      "summary": "Sanctions Rs.16,57,25,000 for Grants-in-Aid under State Annual Action Plan via SNA SPARSH platform.",
+      "policy_area": "health",
+      "districts": [],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_12_2D_2026.pdf",
+      "snippet": "ABSTRACT\n\nIndian Medicine and Homoeopathy — State AYUSH Society - Tamil Nadu (SAS-TN) -\nSanction and release of Mother Sanction of Rs.16,57,25,000/- (Rs.9,94,35,000/-\ntowards Central Share + Rs.6,62,90,000/- towards State Share) of Grants-in-aid\nunder approved activities of State Annual Action Plan (SAAP) under SNA SPARSH\nplatform - Orders - Issued.\n\nHEALTH AND FAMILY WELFARE (IM2-2) DEPARTMENT\n\nG.0.(2D) No. 12 Dated: 15.04.2026\nபராபவ, சித்திரை - 02\n\nதிருவள்ளுவர்‌ ஆண்டு-2057\nRead:\n\n1. From the PFMS Division, Department of Expenditure, Ministry of\nFinance, Government of India Letter F.No.1(27)/"
     },
     {
       "go_key": "fin_e_92_2026",
@@ -511,6 +671,20 @@
       "confidence": 0.9,
       "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_11360419_2026.pdf",
       "snippet": "Secretariat,\nChennai-600 009.\n\nE-mail: hfiwhsec@gmail.com\n\nHEALTH AND FAMILY WELFARE (H2) DEPARTMENT\nLetter No.11360419/H2/2025, dated:08.03.2026\n\nவிசுவாவசு, மாசி-24 ள்‌ ண்டு 2057\n\nFrom\nபா. P.Senthilkumar, 1.&5\nAdditional Chief Secretary 1௦ Government.\n\nTo\n\nThe Director of Medical Education and Research,\nChennai — 600 010.\n\nThe Director of Medical and Rural Health Services,\nChennai — 600 006.\n\nThe Director of Public Health and Preventive Medicine,\nChennai - 600 006.\n\nThe President, Indian Medical Association,\n\nTamil Nadu State Branch, Chennai - 600 018.\n\nSir/Madam,\n\nSub: Special children லாம்‌"
+    },
+    {
+      "go_key": "hfw_e_83_ms_2026",
+      "date": "2026-03-06",
+      "department": "Health and Family Welfare Department",
+      "go_number": "83",
+      "go_type": "ms",
+      "lang": "en",
+      "summary": "Approves the Mental Health Policy for Educational Institutions in Tamil Nadu based on Supreme Court guidelines and committee recommendations.",
+      "policy_area": "health",
+      "districts": [],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_83_ms_2026.pdf",
+      "snippet": "ABSTRACT\n\nMedical Education — Mental Health Policy for Educational institutions in\nTamil Nadu - Orders — Issued.\n\nHEALTH AND FAMILY WELFARE (MCA-1) DEPARTMENT\n\nG.O. (145.) No.83 Dated: 06.03.2026\nவிசுவாவசு வருடம்‌,\nமாசி மாதம்‌ - 22 ஆம்‌ நான்‌\nதிருவள்ளுவர்‌ ஆண்டூ 2057.\nRead:\n\n1. Orders of Hon’ble Supreme Court of india in Cr. Appeal @ SLP (Cri)\nNo.6378 of 2024, dated 25.07.2025.\n\n2, G.O. (2D) No.39, Health and Family Welfare (MCA1) Department,\ndated 10.09.2025.\n\n3. From the Director, Institute of Mental Health, Kilpauk, Chennai letter\nRef. No.1520 / P&D / 2026, dated: 13.02.2026.\n\nORDER:\n\nThe H"
     },
     {
       "go_key": "hfw_e_83_2026",
@@ -1177,6 +1351,20 @@
       "confidence": 0.95,
       "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/rd_e_26_2026.pdf",
       "snippet": "ABSTRACT\n\nSchemes — State Government Scheme - Implementation of “Kalaignarin Kanavu Illam”\nScheme — Announcement made by the Hon'ble Chief Minister in the Tamil Nadu\nLegislative Assembly on 24.01.2026 - Construction of additional one lakh houses\nfor the றன 2025-26 - Administrative sanction for a sum of Rs.3500 ௦௬௦௦\nwith Guidelines for the year 2025-26 and Financial Sanction of Rs.500 crore — Accorded-\nOrders - Issued. :\n\nRural Development and Panchayat Raj (SGS.1) Department\n\nG.0.(Ms.) No.26 Dated: 05.02.2026\nவிசுவாவசு, தை 22\n\nதிருவள்ளுவர்‌ ஆண்டு-2057\nRead:\n\n(1) G.O.(Ms) No.70, Rural Developme"
+    },
+    {
+      "go_key": "hfw_e_33_ms_2026",
+      "date": "2026-02-04",
+      "department": "Health and Family Welfare Department",
+      "go_number": "33",
+      "go_type": "ms",
+      "lang": "en",
+      "summary": "Approves ad-hoc rules for temporary posts in Tamil Nadu Food Safety Service.",
+      "policy_area": "health",
+      "districts": [],
+      "confidence": 0.85,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_33_ms_2026.pdf",
+      "snippet": "ABSTRACT\n\nRULES - Health and Family Welfare Department - Tamil Nadu Food Safety and\nDrug Administration — Tamil Nadu Food Safety Service - Temporary posts of\nDirector-cum-Additional Commissioner of Food Safety, Deputy Director Grade-l!\n(Regulatory and Compliance) and Designated Officer — Ad-hoc Rules — Issued.\n\nHEALTH AND FAMILY WELFARE (M1) DEPARTMENT\n\nG.0.(Ms).No.33 Dated 04.02.2026\nவிசுவாவசு, தை - 21\n\nதிருவள்ளுவர்‌ ஆண்டு 2057\nRead:\n\n1. G.0.(Ms).No.347, Health and Family Welfare (AB2) Department,\ndated 22.12.2011.\n\n2. G.0.(D).No.1010, Health and Family Welfare (AB2) Department,\ndated 26.09.2"
     },
     {
       "go_key": "fin_e_35_2026",
