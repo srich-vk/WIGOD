@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-07T08:14:25",
-  "count": 116,
+  "generated_at": "2026-07-08T07:40:10",
+  "count": 124,
   "departments": [
     "BC, MBC & Minorities Welfare Department",
     "Finance Department",
@@ -17,6 +17,7 @@
   ],
   "policy_areas": [
     "administrative",
+    "education",
     "finance",
     "health",
     "industry",
@@ -68,6 +69,20 @@
       "confidence": 0.95,
       "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hud_e_129_2026.pdf",
       "snippet": "eS\n\nAlone\n\nABSTRACT\n\nUrban Development - Amendment to Tamil Nadu Combined Development\nand Building Rules, 2019 - Industrial layout/Industrial estate developed\nby Government Department/Agencies - Reservation and transfer of 0.5%\nof the area for public purpose to local body - Notification - Orders -\nIssued.\n\nHOUSING AND URBAN DEVELOPMENT [UD4(1)] DEPARTMENT\n\nG.O.(Ms).No. 129 Dated: 29.06.2026\nபராபவ வருடம்‌, ஆனி-15\nதிருவள்ளுவர்‌ ஆண்டூ 2057\n\nORDER:\n\nThe appended Notification will be published in the Tamil Nadu\nGovernment Gazette, Extraordinary dated the 30 June, 2026.\n\n(BY ORDER OF THE GOVERNOR)\n\n"
+    },
+    {
+      "go_key": "hfw_e_734_D_2026",
+      "date": "2026-06-29",
+      "department": "Health and Family Welfare Department",
+      "go_number": "734",
+      "go_type": "d",
+      "lang": "en",
+      "summary": "Approves prospectus for Diploma courses in Integrated Pharmacy and Nursing Therapy in Indian System of Medicine for 2026-2027 academic year.",
+      "policy_area": "health",
+      "districts": [],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_734_D_2026.pdf",
+      "snippet": "ABSTRACT\n\nMedical Education - Indian Medicine and Homoeopathy — Prospectus for Diploma\nCourses for Integrated Pharmacy and Nursing Therapy in Indian System of Medicine\nfor the Academic Year 2026-2027 — Approved — Orders — Issued.\n\nHEALTH AND FAMILY WELFARE (IIMi1—2) DEPARTMENT\n\nG.0.(D)No.734 Dated: 29.06.2026.\nதிருவள்ளுவர்‌ ஆண்டு-2057\nபராயவ-ஆனி 15.\n\nRead:\n\nFrom the Director of Indian Medicine and Homoeopathy, letter No.3662 /\nP&D2 / 2026, dated:12.06.2026.\n\nKKEKKK\n\nORDER:\n\nIn the circumstances stated by the Director of Indian Medicine and Homoeopathy in\nthe letter read above, the Government ap"
     },
     {
       "go_key": "hfw_e_170_ms_2026",
@@ -214,6 +229,34 @@
       "snippet": "ABSTRACT\n\nSchemes — Centrally Sponsored Schemes - Pradhan Mantri Janjati Adivasi Nyaya Maha\nAbhiyan (PM-JANMAN) - PM-JANMAN (2025-26) Batch-| — Construction of 4 roads 1௦ a\nlength of 10.96 Km at a cost of Rs.9.07 crore - 18t instalment of Mother Sanction of Rs.2.50\nCrore as Central Share and Corresponding State Share of Rs.1.67 Crore totally Rs.4.17\nCrore as Programme Fund - Sanctioned — Orders — Issued.\n\nRural Development and Panchayat Raj [CGS-2(1)] Department\n\nG.0.(Ms) No.108 Dated: 09.06.2026\nஸ்ரீபராபவ, வைகாசி 26,\nதிருவள்ளுவர்‌ ஆண்டு 2057\nRead :\n\n1. Ministry of Rural Development letter F.N"
     },
     {
+      "go_key": "hfw_e_678_D_2026",
+      "date": "2026-06-09",
+      "department": "Health and Family Welfare Department",
+      "go_number": "678",
+      "go_type": "d",
+      "lang": "en",
+      "summary": "Approves prospectus for UG BSMS, BAMS, BHMS courses under Management Quota in self-financing Indian Medicine and Homoeopathy colleges for 2026-2027 academic year.",
+      "policy_area": "health",
+      "districts": [],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_678_D_2026.pdf",
+      "snippet": "ட்‌ we\nAtone TRY\n\nABSTRACT\n\nMedical Education — Indian Medicine and Homoeopathy — Prospectus for UG - BSMS,\nBAMS, BHMS courses for Management Quota seats in Self Financing Indian Medicine\nand Homoeopathy Medical Colleges for the Academic Year 2026-2027 — Approved —\nOrders — Issued.\n\nHEALTH AND FAMILY WELFARE (IM1—1) DEPARTMENT\n\nG.O.(D)No.678 Dated: 09.06.2026.\nதிருவள்ளுவர்‌ ஆண்டு-2057\nபராபவ- வைகாசி 26.\n\nRead:\n\nFrom the Commissioner of Indian Medicine and Homoeopathy, letter\nNo.3662/ P&D2/ 2026, dated: 08.05.2026.\n\nRREKE\n\nORDER: -\n\nIn the letter read above, the Commissioner of Indian Medicine a"
+    },
+    {
+      "go_key": "hfw_e_674_D_2026",
+      "date": "2026-06-08",
+      "department": "Health and Family Welfare Department",
+      "go_number": "674",
+      "go_type": "d",
+      "lang": "en",
+      "summary": "Approves prospectus for UG AUSH courses in BSMS, BAMS, BUMS, BHMS government and surrendered seats for 2026-2027 academic year.",
+      "policy_area": "health",
+      "districts": [],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_674_D_2026.pdf",
+      "snippet": "ABSTRACT\n\nMedical Education — Indian Medicine and Homoeopathy — Prospectus for UG AUSH\n__ Courses in BSMS, BAMS, BUMS, BHMS Government Seats and Government\n_ Surrendered Seats for the Academic Year 2026-2027 — Approved — Orders - Issued.\n\nHEALTH AND FAMILY WELFARE மா) DEPARTMENT\n\nG.0.(D)No.674 Dated: 08.06.2026.\nதிருவள்ளுவர்‌ ஆண்டு-2057\nபராபவ-வைகாசி 25.\n\nRead:\n\nFrom the Commissioner of Indian Medicine and Homoeopathy, letter\nNo.3662/ P&D2/ 2026, dated 08.05.2026.\n\nREEKK\n\nORDER: -\n\nIn the letter read above, the Commissioner of Indian Medicine and °\nHomoeopaihy has sent the draft prospectus for "
+    },
+    {
       "go_key": "hfw_e_162_ms_2026",
       "date": "2026-06-03",
       "department": "Health and Family Welfare Department",
@@ -272,6 +315,34 @@
       "confidence": 0.95,
       "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/public_e_366_2026.pdf",
       "snippet": "0௦ BE PUBLISHED IN AN\nEXTRA-ORDINARY ப பா THE\nTAMIL NADU GOVERNMENT GAZETTE\n\nDATED THE 30 May, 2026\n\nABSTRACT\nMINISTERS - Inter-se-Seniority of Ministers and Subjects - Orders - Issued.\n\nPUBLIC (SPECIAL.B) DEPARTMENT\nG.0.Ms.No0.366 Dated:30.05.2026\n\nParabhava, Vaikasi - 16, Thiruvalluvar Aandu-2057\n\nRead:\ns.No.329, Public (Special.B) Department, dated.10.05.2026\n\nG.0.M\n\nG.0.Ms.No.338, Public (Special.B) Department, dated.16.05.2026\nG.0.Ms.No.343, Public (Special.B) Department, dated.21.05.2026\nG.0.M\nG.0.M\n\ns.No.344, Public (Special.B) Department, dated.22.05.2026\ns.No.345, Public (Special.B) D"
+    },
+    {
+      "go_key": "hfw_e_608_D_2026",
+      "date": "2026-05-29",
+      "department": "Health and Family Welfare Department",
+      "go_number": "608",
+      "go_type": "d",
+      "lang": "en",
+      "summary": "Approves the prospectus for B.N.Y.S (UG) Medical courses under Management Quota for 2026-2027 academic year.",
+      "policy_area": "health",
+      "districts": [],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_608_D_2026.pdf",
+      "snippet": "ABSTRACT\n\nMedical Education - Indian Medicine and Homoeopathy — Prospectus for B.N.Y.S\n(UG) Medical courses for Management Quota for the Academic Year 2026-2027 —\n\nApproved — Orders - Issued.\n\nHEALTH AND FAMILY WELFARE (IMi-2) DEPARTMENT\n\nG.0.(D)No.608 Dated: 29.05.2026.\nதிருவள்ளுவர்‌ ஆண்டு-2057\nபராபவ-வைகாசி 15.\n\nRead:\n\nFrom the Commissioner of Indian Medicine and Homoeopathy,\nletter No.3662/ P&D2/ 2026, dated: 30.04.2026.\n\nKEKE\n\nORDER:\n\nIn the letter read above, the Commissioner of Indian Medicine and\nHomoeopathy has sent the draft prospectus for B.N.Y.S (UG) Medical courses for\nManagement Qu"
+    },
+    {
+      "go_key": "hfw_e_607_D_2026",
+      "date": "2026-05-29",
+      "department": "Health and Family Welfare Department",
+      "go_number": "607",
+      "go_type": "d",
+      "lang": "en",
+      "summary": "Approves the prospectus for B.N.Y.S (UG) Medical courses under Government Quota for 2026-2027 academic year.",
+      "policy_area": "health",
+      "districts": [],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_607_D_2026.pdf",
+      "snippet": "ABSTRACT\n\nMedical Education — Indian Medicine and Homoeopathy — Prospectus for B.N.Y.S\n(UG) Medical courses for Government Quota for the Academic Year 2026-2027 _-\n\nApproved — Orders — Issued.\n\nHEALTH AND FAMILY WELFARE (IM1—2) DEPARTMENT\n\nG.0.(D)No.607 Dated: 29.05.2026.\nதிருவள்ளுவர்‌ ஆண்டு-2057\nபராபவ-வைகாசி 15.\n\nRead:\n\nFrom the Commissioner of Indian Medicine and Homoeopathy,\nletter No.3662/ P&D2/ 2026, dated: 30.04.2026.\nORDER:\n\nIn the letter read above, the Commissioner of Indian Medicine and\nHomoeopathy has sent the draft prospectus for B.N.Y.S (UG) Medical courses for\nGovernment Quota fo"
     },
     {
       "go_key": "hfw_e_596_D_2026",
@@ -845,6 +916,22 @@
       "snippet": "க ! 3T\n\n2 s ஷ்‌\nஎல்க்‌ டல\n\nABSTRACT\n\nNational Health Mission—Tamil Nadu — Establishment of Master Dental Check-up Unit\n(MDCU) in the Tamil Nadu Government Dental College and Hospital, Chennai —\nAdministrative and financial sanction accorded — Orders Issued.\n\nHEALTH AND FAMILY WELFARE (EAP.II/1) DEPARTMENT\n\nG.0.(Ms.).No.62 Dated 26.02.2026\nவிசுவாவசு, மாசி — 14\n\nதிருவள்ளுவர்‌ ஆண்டு 2057\n\nRead:\n\n1. G.0.(Ms.).No.27, Health and Family Welfare (EAP.II/2) Department,\ndated 24.01.2023.\n\n2. G.0.(Ms.).No.272, Health and Family Welfare (௩45.2) Department,\ndated 09.08.2023.\n\n3. G.0.(Ms.).N0.102, பவ and Fa"
     },
     {
+      "go_key": "hfw_e_61_ms_2026",
+      "date": "2026-02-25",
+      "department": "Health and Family Welfare Department",
+      "go_number": "61",
+      "go_type": "ms",
+      "lang": "en",
+      "summary": "Sanctions 32 posts and Rs.1.22 crore for Trauma Critical Care Block at Nazarethpet Government Hospital.",
+      "policy_area": "health",
+      "districts": [
+        "Thiruvallur"
+      ],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_61_ms_2026.pdf",
+      "snippet": "ABSTRACT\n\nEstablishment — Nazarethpet, Thiruvallur District - Trauma Critical Care Centres —\nSanction of Human Resources - Orders — Issued.\n\nHealth and Family Welfare (F2) Department\n\nG.O.(Ms). No.61 Dated:25.02.2026\nவிசுவாவசு, மாசி-13\n\nதிருவள்ளுவர்‌ ஆண்டு-2057\nRead:-\n\n1. G.O.(Ms).No.380 Health and Family Welfare\nDepartment, Dated:30.08.2018.\n\n2. From the Director of Medical and Rural Health Services,\nletter No. 37795/P&DII/3/2023, dated: 04.11.2024 and\n27.01.2025.\n\nள்ள\nORDER:-\nIn the Government Order first read above, the Government accorded sanction\n\nto establish Trauma Care Centres in Tiruv"
+    },
+    {
       "go_key": "hfw_e_262_D_2026",
       "date": "2026-02-25",
       "department": "Health and Family Welfare Department",
@@ -1339,6 +1426,22 @@
       "snippet": "ABSTRACT\n\nTamil Nadu Health Systems Project - Chief Minister's Comprehensive Health\nInsurance Scheme — KH and 12H policy period — Rs.1,30,66,820/- sanctioned from\nChief Minister's Comprehensive Health Insurance Scheme corpus fund — Orders —\nIssued.\n\nHEALTH AND FAMILY WELFARE (EAPI-1) DEPARTMENT\n\n௨.௦. (D) No.167 Dated: 09.02.2026\nவிசுவாவசு வருடம்‌, தை — 26\n\nதிருவள்ளுவர்‌ ஆண்டு-2057\n11620:\n\n1. G.0.(Ms).N0.60, Health and Family Welfare (EAP1/1) Department, dated:\n27022023,\n\n2. From the Project Director, TNHSP, Chennai, Ref.No:4699/TNHSP/INS/2024,\ndated: 12.08.2024 and 29.10.2024.\n\n3. From the Dir"
     },
     {
+      "go_key": "hfw_e_165_D_2026",
+      "date": "2026-02-09",
+      "department": "Health and Family Welfare Department",
+      "go_number": "165",
+      "go_type": "d",
+      "lang": "en",
+      "summary": "Sanctions additional fund of Rs.3,34,85,132 for International Institute of Yoga and Naturopathy Medical Sciences, Chengalpattu.",
+      "policy_area": "health",
+      "districts": [
+        "Chengalpattu"
+      ],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_165_D_2026.pdf",
+      "snippet": "ABSTRACT\n\nIndian Medicine and Homoeopathy - Sanction of additional fund of Rs.3,34,85,132/-\ntowards meeting out the expenditure of International Institute of Yoga and Naturopathy\nMedical Sciences, Chengalpattu - Accorded - Orders — Issued.\n\nHEALTH AND FAMILY WELFARE (liii—2) DEPARTMENT\n\nG.O.(D)No.165 Dated: 09.02.2026.\nதிருவள்ளுவர்‌ ஆண்டு-2057\nவிசுவாவசு-தை--26.\n\nRead:\n\nFrom the Commissioner of Indian Medicine and Homoeopathy, Ref.\nNo:7423 / SA3 / 2025, Dated: 08.07.2025, 25.11.2025 and 02.12:2025.\n\nKEKE\n\nORDER:\n\nThe: Commissioner of Indian Medicine and Homoeopathy in her letter read\nabove has "
+    },
+    {
       "go_key": "rd_e_26_2026",
       "date": "2026-02-05",
       "department": "Rural Development and Panchayat Raj Department",
@@ -1564,6 +1667,20 @@
       "confidence": 0.9,
       "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_99_e_2026_D.pdf",
       "snippet": "ABSTRACT\n\nEstablishment Revival of one temporary post of Reader in Nursing and two temporary\nposts of Lecturer in Nursing attached to College of Nursing in Government Theni\nMedical College, Theni - Orders - Issued.\n\nHEALTH AND FAMILY WELFARE (J2) DEPARTMENT\n\n6.௦. (D). No.99 \" Dated 22.01.2026.\nதிருவன்னாவர்‌ ஆண்டு — 2057\nவிசுவாவசு, தை — 08\n\nRead:\n\n1. G.0.(Ms)No.205 Health and Family ளக 105)\nDepartment, dated 17.09.2013.\n\n2 From the Director of Medical Education and Research,\nChennai, Letter Ref.N0.26463/N2/2025, dated 08.04.2025 and\n31.10.2025.\n\nச்ஸ்ள்ஸ்ஸ்\n\nORDER: -\n\nThe Director of Medical Edu"
+    },
+    {
+      "go_key": "hfw_e_98_D_2026",
+      "date": "2026-01-21",
+      "department": "Health and Family Welfare Department",
+      "go_number": "98",
+      "go_type": "d",
+      "lang": "en",
+      "summary": "Sanctions Rs.4,47,66,000/- for fee payment to 318 students under 7.5% preferential admission scheme in 2025-2026.",
+      "policy_area": "education",
+      "districts": [],
+      "confidence": 0.95,
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_98_D_2026.pdf",
+      "snippet": "ABSTRACT\n\nPlanning and Development - Indian Medicine and Homoeopathy Department —\nBudget Estimate for the year 2025-2026 — Payment of Fees to students under 7.5%\non preferential basis — Sanction of additional fund of Rs.14,12,119/- — Accorded —\n\nOrders — Issued.\n\nHEALTH AND FAMILY WELFARE (IM1—2) DEPARTMENT\n\nG.0.(D)No.98 Dated: 21.01.2026.\nதிருவள்ளுவர்‌ ஆண்டு-2057\nவிசுவாவசு--தை-07.\n\nRead:\n\nFrom the Commissioner of Indian Medicine and Homoeopathy,\nRef.No.987/P&D-2/2025, dated: 25.11.2025\n\nKRKEEKE\n\nORDER:\n\nIn the letter read above, the Commissioner of Indian Medicine and\nHomoeopathy has stated t"
     },
     {
       "go_key": "hfw_e_12_Ms_2026",
