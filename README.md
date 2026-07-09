@@ -5,8 +5,9 @@ built entirely from public **Government Orders (GOs)** on `tn.gov.in`. No
 commentary, no opinion: one plain-English line per order, tagged by department,
 policy area, and district, with a link back to the source PDF.
 
-Summarization runs **locally** on an Ollama LLM — no external API, no per-token
-cost, nothing leaves your machine.
+Summarization runs through an LLM — hosted **Groq** by default (used by the daily
+automation), or a fully **local Ollama** model if you'd rather nothing leaves your
+machine. The provider is a one-line switch (`LLM_PROVIDER`).
 
 ---
 
@@ -14,8 +15,8 @@ cost, nothing leaves your machine.
 
 ```
 scrape  →  fetch  →  extract  →  summarize  →  store  →  render
-go.php     PDF        pdfplumber   Ollama        SQLite    static site
-listings   (cached)   text+date    (qwen2.5:7b)  ledger    timeline
+go.php     PDF        pdfplumber   Groq/Ollama   SQLite    static site
+listings   (cached)   text+date    (LLM)         ledger    timeline
 ```
 
 1. **scrape** — `go.php?dep_id=&year=` is read per department; GO PDF links + GO
@@ -94,35 +95,46 @@ selected by `LLM_PROVIDER` (`groq` | `ollama`) in `tntracker/config.py` / env.
   model is `GROQ_MODEL` (default `qwen/qwen3-32b`).
 - Ollama: set `OLLAMA_HOST`; model is `OLLAMA_MODEL` (needs a local GPU server).
 
-### Daily automation (GitHub Actions → GitHub Pages)
-The repo runs itself in the cloud — no local machine needed. `.github/workflows/daily.yml`
-scrapes new GOs, summarizes them via Groq, renders the timeline into `docs/`, and
-commits `docs/` + `data/tracker.db` back to `main`. GitHub Pages serves the result
-from `main` `/docs` at `https://srich-vk.github.io/WIGOD/`.
+### Daily automation
+
+The pipeline (scrape → summarize via Groq → render into `docs/` → commit `docs/` +
+`data/tracker.db` back to `main`) runs unattended every day. GitHub Pages serves the
+result from `main` `/docs` at `https://srich-vk.github.io/WIGOD/`.
 
 The pipeline is idempotent: the committed `data/tracker.db` ledger lets each run
 skip GOs already summarized, so a run only processes the handful of new orders
 (well within Groq's free tier). The ledger **must** stay committed — that's why
 it is no longer gitignored.
 
-> ⚠️ **The daily schedule is currently disabled (manual `workflow_dispatch` only).**
-> GitHub-hosted runners (US/EU Azure IPs) **cannot reach `tn.gov.in`** — it silently
+**Current host: a Raspberry Pi (`srichpi`), on cron/systemd.**
+The daily run happens on a home Raspberry Pi because it needs **Indian network
+access** (see the GitHub Actions caveat below). The Pi runs the pipeline + render,
+then commits and pushes the result to `main`; GitHub Pages redeploys automatically.
+Its commits are authored by `srichpi (WIGOD bot)` and titled
+`Daily update (Pi): refresh timeline and ledger`. The scheduling units live on the
+Pi itself, not in this repo.
+
+To reproduce the Pi's job on any always-on Indian-network machine, use cron:
+```bash
+# crontab -e  — run at 06:30 daily, then regenerate the site
+30 6 * * * cd /home/srich-vk/Documents/WIMAD && .venv/bin/python -m tntracker.pipeline --year "$(date +%Y)" && .venv/bin/python -m tntracker.render && git add docs data/tracker.db && git commit -m "Daily update" && git push
+```
+
+**GitHub Actions (`.github/workflows/daily.yml`) — schedule disabled, fallback only.**
+The workflow does the same scrape → summarize → publish steps in the cloud, but its
+`schedule:` block is **commented out**; only manual `workflow_dispatch` runs remain.
+
+> ⚠️ GitHub-hosted runners (US/EU Azure IPs) **cannot reach `tn.gov.in`** — it silently
 > drops non-Indian / datacenter traffic, so the scrape times out (verified: HTTP 000,
 > no TCP connect). The pipeline and Pages publishing work; only the *scrape host* is
-> the open problem. To automate, run this from a machine with Indian network access —
-> a **self-hosted GitHub runner** (`runs-on: self-hosted`) or an **India-region VPS**
-> on cron — then re-enable the `schedule:` block in `.github/workflows/daily.yml`.
-> Until then, the site is refreshed by running the pipeline locally and pushing.
+> the problem, which is exactly why the daily job runs on the Pi. To move automation
+> back into Actions, use a machine with Indian network access — a **self-hosted GitHub
+> runner** (`runs-on: self-hosted`) or an **India-region VPS** — then re-enable the
+> `schedule:` block in `.github/workflows/daily.yml`.
 
 **One-time setup (GitHub UI), already done for this repo:**
 1. Repo secret `GROQ_API_KEY` (Settings → Secrets and variables → Actions).
 2. Pages: Settings → Pages → Source = *Deploy from a branch* → `main` `/docs`.
-
-To run the daily job on your own machine instead, use cron:
-```bash
-# crontab -e  — run at 06:30 daily, then regenerate the site
-30 6 * * * cd /home/srich-vk/Documents/WIMAD && .venv/bin/python -m tntracker.pipeline --year 2026 && .venv/bin/python -m tntracker.render
-```
 
 ---
 
@@ -143,7 +155,7 @@ tntracker/
 data/              tracker.db (committed ledger) + cached pdfs/ (gitignored)
 site/              generated static site for local dev (gitignored)
 docs/              generated static site published to GitHub Pages (committed by CI)
-.github/workflows/daily.yml   scheduled cloud run (scrape → summarize → publish)
+.github/workflows/daily.yml   cloud run (schedule disabled; manual fallback — daily job runs on the Pi)
 ```
 
 ## Known limits / next steps
